@@ -1,14 +1,47 @@
-import React from 'react'
-import SectionQualquer from '../components/Sections/SectionQualquer'
+import React from 'react';
+import styles from '../styles/styles';
+
+import {
+  Navbar,
+  Billing,
+  CardDeal,
+  Bussiness,
+  Clients,
+  CTA,
+  Stats,
+  Footer,
+  Testimonials,
+  Hero,
+} from '../components';
 
 export default function Home() {
   return (
     <>
-      <div className="text-center">Home</div>
-      <section>
-        <SectionQualquer />
-      </section>
-    </>
-  )
-}
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
+      </div>
 
+      <div className={` bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          {' '}
+          <Hero />{' '}
+        </div>
+      </div>
+
+      <div className={` bg-primary ${styles.flexStart} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats />
+          <Bussiness />
+          <Billing />
+          <CardDeal />
+          <Clients />
+          <CTA />
+          <Testimonials />
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
+}
