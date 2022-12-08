@@ -29,6 +29,7 @@ const Hero = () => {
           </p>
         </div>
 
+        {/* text  */}
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-7xl text-[52px] text-white ss:leading-[100px] leading-[75px]">
             The next <br className="sm:block hidden" />{' '}
@@ -53,6 +54,21 @@ const Hero = () => {
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
         </p>
+      </div>
+
+      {/* robot image  */}
+      <div
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+      >
+        <img src={robot} alt="robot" className="w-full h-full relative z-10" />
+
+        <div className="absolute z-0 w-[40%] h-[35%] top-0 pink-gradient"></div>
+        <div className="absolute z-[1] w-[80%] h-[80%] top-0 white-gradient rounded-full bottom-40"></div>
+        <div className="absolute z-0 w-[50%] h-[55%] bottom-20 blue-gradient"></div>
+      </div>
+
+      <div className={`ss:hidden ${styles.flexCenter}`}>
+        <GetStarted />
       </div>
     </section>
   );
