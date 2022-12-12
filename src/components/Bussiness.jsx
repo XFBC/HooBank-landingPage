@@ -2,6 +2,7 @@ import React from 'react';
 import { features } from '../contants/';
 import Button from '../components/Button';
 import styles, { layout } from '../styles/styles';
+import FeatureCard from './FeautureCard';
 
 const Bussiness = () => {
   return (
@@ -20,7 +21,12 @@ const Bussiness = () => {
 
         <Button styles="mt-10" />
       </div>
-      ;
+
+      <div className={`${layout.sectionImg} flex-col`}>
+        {features.map((feature) => (
+          <FeatureCard key={feature.id} {...feature} />
+        ))}
+      </div>
     </section>
   );
 };

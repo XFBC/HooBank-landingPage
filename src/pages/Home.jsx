@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/styles';
+import '../styles/index.scss';
 
 import {
   Navbar,
@@ -36,9 +37,9 @@ export default function Home() {
           <Bussiness />
           <Billing />
           <CardDeal />
+          <Testimonials />
           <Clients />
           <CTA />
-          <Testimonials />
           <Footer />
         </div>
       </div>
