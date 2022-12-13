@@ -13,7 +13,7 @@ import {
   Footer,
   Testimonials,
   Hero,
-} from '../components';
+} from '../components/Index';
 
 export default function Home() {
   return (
